@@ -1,5 +1,4 @@
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -11,11 +10,11 @@ import static io.qameta.allure.Allure.step;
 import static com.codeborne.selenide.Condition.matchText;
 
 
-public class ABTestingPage extends BaseTest {
+public class ABTestingPageTest extends BaseTest {
 
     @DisplayName("Проверка страницы 'ABTesting'")
     @Test
-    void checkABTestingPage() throws InterruptedException {
+    void checkABTestingPage() {
 
         step("Открыть страницу A/B Testing", () ->
                 $(byText("A/B Testing")).click());
